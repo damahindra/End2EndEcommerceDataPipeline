@@ -4,7 +4,7 @@ from google.cloud import storage
 
 # instantiate Client
 client = storage.Client.from_service_account_json(json_credentials_path='ecommerce-sales-data-pipeline-aa66d78b834c.json')
-primary_bucket = 'bkt-event-data'
+primary_bucket = 'bkt-ecommerce-sales-data'
 
 def validate_file(filename):
     return filename.endswith('.csv')
@@ -14,13 +14,13 @@ def upload_file_to_gcs(local_file) :
     bucket = client.get_bucket(primary_bucket)
 
     # Name of the object to be stored in the bucket
-    object_name_in_gcs_bucket = bucket.blob(f'event-data.csv')
+    object_name_in_gcs_bucket = bucket.blob(f'ecommerce-sales-data.csv')
 
     # Name of the object in local file system
     object_name_in_gcs_bucket.upload_from_file(local_file)
 
 # title
-st.title('Event Data Uploader')
+st.title('Ecommerce Data Uploader')
 st.write('The uploaded csv file will be stored in GCS, preprocessed with Dataflow, moved to Bigquery, and visualized in Looker Studio')
 
 # upload logic
