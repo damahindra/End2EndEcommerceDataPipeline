@@ -1,0 +1,89 @@
+{
+    "BigQuery Schema" : [
+    {
+        "name": "Invoice_ID",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "Branch",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "City",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "Customer_type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "Gender",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "Product_line",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "Unit_price",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "Quantity",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "Tax_5",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "Total",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "Date",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "Time",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "Payment",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "cogs",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "gross_margin_percentage",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "gross_income",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "Rating",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    }
+]
+}
