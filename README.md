@@ -14,19 +14,19 @@ This project is designed to automate the processing and visualization of e-comme
 
 - **Automated Data Processing:** Uses Google Cloud Functions to trigger an automated Dataflow job for transferring data to BigQuery.
 
-- **Scalable Storage: ** Leverages BigQuery for efficient and scalable storage of large datasets.
+- **Scalable Storage:** Leverages BigQuery for efficient and scalable storage of large datasets.
 
 - **Dynamic Visualization:** Integrates with Looker Studio to provide interactive and customizable dashboards for data visualization.
 
 ## Architecture
 
-- **CSV File Upload: ** Users upload their e-commerce sales CSV files via a custom-built web interface that will transfer the file to Google Cloud Storage.
+- **CSV File Upload:** Users upload their e-commerce sales CSV files via a custom-built web interface that will transfer the file to Google Cloud Storage.
 
 - **Cloud Function Trigger:** A Cloud Function is triggered upon file upload, initiating the data pipeline process.
 
 - **Dataflow Job:** The Cloud Function starts a Dataflow job that reads the CSV file, processes the data, and loads it into BigQuery.
 
-- **BigQuery Storage: ** Processed data is stored in BigQuery, providing a scalable and efficient storage solution.
+- **BigQuery Storage:** Processed data is stored in BigQuery, providing a scalable and efficient storage solution.
 
 - **Looker Studio Dashboard:** Data in BigQuery is connected to Looker Studio, enabling users to create and customize dashboards for visual analysis.
 
